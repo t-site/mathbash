@@ -3,14 +3,14 @@
 RR="1*2="
 ANS="2"
 
-while read -p "$RR>" INPUT
+while read -p "$RR" INPUT
 do
 	if [[ "$ANS" == "$INPUT" ]]
 	then
-		R1=`strings /dev/urandom| tr -d '\r\t\n[:punct:][:alpha:] ' | head -c2`
-		R2=`strings /dev/urandom| tr -d '\r\t\n[:punct:][:alpha:] ' | head -c1`
+		R1=$( shuf -n 1 99.txt )
+		R2=$( shuf -n 1 19.txt )
 		RR="$R1*$R2="
-		ANS=`expr $R1 '*' $R2`
+		ANS=$(( "${R1}" * "${R2}" ))
 	else
 		continue
 	fi
