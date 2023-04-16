@@ -8,6 +8,8 @@ subtractest.sh which of -9 to +9 number subtract from 0-99 number.
 
 powtest.sh multiplie 0-99 number by which of  -9 to +9 number. You should know Japanese Kuku.
 
+operatortest.sh guess the operator from numbers.
+
 ^D (press Ctrl and 'D' both ) to exit.
 
 psst.sh is random sum/subtract/power/divide 4 numbers. number which of -9 to 9.
